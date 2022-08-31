@@ -14,6 +14,7 @@ const App = () => {
     function restart(){
         const newBoard = new Board()
         newBoard.initCell()
+        newBoard.addFigure()
         setBoard(newBoard)
     }
 
