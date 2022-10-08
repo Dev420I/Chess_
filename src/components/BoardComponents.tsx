@@ -1,4 +1,4 @@
-import React, {FC, useState} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 import {Board} from "../models/Board";
 import CellComponents from "./CellComponents";
 import {Cell} from "../models/Cell";
@@ -20,7 +20,7 @@ const BoardComponents: FC<BoardProps> = ({board, setBoard }) => {
     }
 
     function highlightCells(){
-        board.highlightCells()
+        board.highlightCells(selectedCell)
         updateBoard()
     }
 
@@ -29,7 +29,9 @@ const BoardComponents: FC<BoardProps> = ({board, setBoard }) => {
         setBoard(newBoard)
     }
 
-
+ useEffect(() => {
+     highlightCells()
+ },[selectedCell])
 
     return (
         <div className='board'>
@@ -50,3 +52,5 @@ const BoardComponents: FC<BoardProps> = ({board, setBoard }) => {
 };
 
 export default BoardComponents;
+
+//ютуб смотреть до 37 минуты проекта 
