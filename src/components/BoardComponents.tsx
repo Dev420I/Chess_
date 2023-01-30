@@ -67,3 +67,4 @@ const BoardComponent: FC<BoardProps> = ({board, setBoard, currentPlayer, swapPla
 export default BoardComponent;
 
 //ютуб смотреть до 37 минуты проекта
+
