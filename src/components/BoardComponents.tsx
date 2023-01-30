@@ -1,8 +1,6 @@
-
-
 import React, {FC, useEffect, useState} from 'react';
 import {Board} from "../models/Board";
-import CellComponent from "./CellComponents";
+import CellComponents from "./CellComponents";
 import {Cell} from "../models/Cell";
 import {Player} from "../models/Player";
 
@@ -50,7 +48,7 @@ const BoardComponent: FC<BoardProps> = ({board, setBoard, currentPlayer, swapPla
                 {board.cells.map((row, index) =>
                     <React.Fragment key={index}>
                         {row.map(cell =>
-                            <CellComponent
+                            <CellComponents
                                 click={click}
                                 cell={cell}
                                 key={cell.id}
@@ -65,6 +63,3 @@ const BoardComponent: FC<BoardProps> = ({board, setBoard, currentPlayer, swapPla
 };
 
 export default BoardComponent;
-
-//ютуб смотреть до 37 минуты проекта
-

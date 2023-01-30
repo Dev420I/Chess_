@@ -7,7 +7,7 @@ interface CellProps {
     click: (cell: Cell) => void;
 }
 
-const CellComponent: FC<CellProps> = ({cell, selected, click}) => {
+const CellComponents: FC<CellProps> = ({cell, selected, click}) => {
     return (
         <div
             className={['cell', cell.color, selected ? "selected" : ''].join(' ')}
@@ -20,4 +20,4 @@ const CellComponent: FC<CellProps> = ({cell, selected, click}) => {
     );
 };
 
-export default CellComponent;
+export default CellComponents;
