@@ -20,7 +20,7 @@ export class Board {
                 if ((i + j) % 2 !== 0) {
                     row.push(new Cell(this, j, i, Colors.BLACK, null)) // Черные ячейки
                 } else {
-                    row.push(new Cell(this, j, i, Colors.WHITE, null)) // белые
+                    row.push(new Cell(this, j, i, Colors.WHITE, null)) // Белые ячейки
                 }
             }
             this.cells.push(row);
