@@ -1,8 +1,8 @@
 import React, { FC, useEffect, useState } from 'react';
-import { Board } from '../../entities/board/Board';
-import CellComponents from '../../shared/ui/Cell/Cell';
-import { Cell } from '../../entities/cell/Cell';
-import { Player } from '../../entities/player/Player';
+import { Board } from '../../../entities/board/Board';
+import CellComponents from '../../../shared/ui/Cell/Cell';
+import { Cell } from '../../../entities/cell/Cell';
+import { Player } from '../../../entities/player/Player';
 
 interface BoardProps {
   board: Board;

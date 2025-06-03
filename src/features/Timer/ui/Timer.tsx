@@ -1,6 +1,6 @@
 import React, { FC, useEffect, useRef, useState } from 'react';
-import { Player } from '../../entities/player/Player';
-import { Colors } from '../../shared/const/colors';
+import { Player } from '../../../entities/player/Player';
+import { Colors } from '../../../shared/const/colors';
 
 interface TimerProps {
   currentPlayer: Player | null;

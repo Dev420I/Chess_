@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Figure } from '../../entities/figures/Figure';
+import { Figure } from '../../../entities/figures/Figure';
 
 interface LostFiguresProps {
   title: string;
